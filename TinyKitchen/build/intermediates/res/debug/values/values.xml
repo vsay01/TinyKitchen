@@ -98,6 +98,7 @@
     <!-- From: file:/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="ltgray">#ffe0e0e0</color>
+    <color name="mMuteColor">#333333</color>
     <!-- From: file:/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <color name="material_blue_grey_800">#ff37474f</color>

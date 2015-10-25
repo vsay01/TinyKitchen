@@ -29,6 +29,10 @@ import com.example.tinykitchen.data.ArticleLoader;
 import com.example.tinykitchen.data.ItemsContract;
 import com.example.tinykitchen.data.UpdaterService;
 
+import butterknife.Bind;
+import butterknife.BindInt;
+import butterknife.ButterKnife;
+
 /**
  * An activity representing a list of Articles. This activity has different presentations for
  * handset and tablet-size devices. On handsets, the activity presents a list of items, which when
@@ -38,26 +42,22 @@ import com.example.tinykitchen.data.UpdaterService;
 public class ArticleListActivity extends ActionBarActivity implements
         LoaderManager.LoaderCallbacks<Cursor>, AppBarLayout.OnOffsetChangedListener {
 
-    View.OnClickListener mOnClickListener;
+    @Bind(R.id.toolbar) Toolbar mToolbar;
+    @Bind(R.id.swipe_refresh_layout) SwipeRefreshLayout mSwipeRefreshLayout;
+    @Bind(R.id.recycler_view) RecyclerView mRecyclerView;
+    @Bind(R.id.appbar) AppBarLayout appBarLayout;
+    @Bind(R.id.drawerLayout) DrawerLayout mDrawerLayout;
+    @Bind(R.id.nav_view) NavigationView navigationView;
+    @BindInt(R.integer.list_column_count) int column_count;
 
-    private Toolbar mToolbar;
-    private SwipeRefreshLayout mSwipeRefreshLayout;
-    private RecyclerView mRecyclerView;
-    private AppBarLayout appBarLayout;
-
-    private int previousTotal = 0;
-    private boolean loading = true;
-    private int visibleThreshold = 5;
-    int firstVisibleItem, visibleItemCount, totalItemCount;
-
-    DrawerLayout mDrawerLayout;
+    final StaggeredGridLayoutManager mLayoutManager = new StaggeredGridLayoutManager(column_count, StaggeredGridLayoutManager.VERTICAL);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_list);
-
-        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        //Bind view id using ButterKnife
+        ButterKnife.bind(this);
 
         setSupportActionBar(mToolbar);
         final ActionBar ab = getSupportActionBar();
@@ -65,15 +65,10 @@ public class ArticleListActivity extends ActionBarActivity implements
         ab.setDisplayHomeAsUpEnabled(true);
         ab.setDisplayShowTitleEnabled(false);
 
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         if (navigationView != null) {
             setupDrawerContent(navigationView);
         }
-        //final View toolbarContainerView = findViewById(R.id.toolbar_container);
 
-        mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
         mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
@@ -82,23 +77,22 @@ public class ArticleListActivity extends ActionBarActivity implements
                 refresh();
             }
         });
-        appBarLayout = (AppBarLayout) findViewById(R.id.appbar);
 
-        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        //init loader
         getLoaderManager().initLoader(0, null, this);
 
+        //prevent the instance state when rotate
         if (savedInstanceState == null) {
             refresh();
         }
-
-        final StaggeredGridLayoutManager mLayoutManager = new StaggeredGridLayoutManager(getResources().getInteger(R.integer.list_column_count), StaggeredGridLayoutManager.VERTICAL);
+        //set layout for recyler view widget
         mRecyclerView.setLayoutManager(mLayoutManager);
-
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            // open drawer layout
             case android.R.id.home:
                 mDrawerLayout.openDrawer(GravityCompat.START);
                 return true;
@@ -172,6 +166,7 @@ public class ArticleListActivity extends ActionBarActivity implements
         mRecyclerView.setAdapter(null);
     }
 
+    //Adapter class for reclyer view and view holder pattern
     private class Adapter extends RecyclerView.Adapter<ViewHolder> {
         private Cursor mCursor;
 
@@ -196,6 +191,7 @@ public class ArticleListActivity extends ActionBarActivity implements
                             ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition()))));
                 }
             });
+
             return vh;
         }
 
@@ -223,15 +219,13 @@ public class ArticleListActivity extends ActionBarActivity implements
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        public DynamicHeightNetworkImageView thumbnailView;
-        public TextView titleView;
-        public TextView subtitleView;
+        @Bind(R.id.thumbnail) DynamicHeightNetworkImageView thumbnailView;
+        @Bind(R.id.article_title) TextView titleView;
+        @Bind(R.id.article_subtitle) TextView subtitleView;
 
         public ViewHolder(View view) {
             super(view);
-            thumbnailView = (DynamicHeightNetworkImageView) view.findViewById(R.id.thumbnail);
-            titleView = (TextView) view.findViewById(R.id.article_title);
-            subtitleView = (TextView) view.findViewById(R.id.article_subtitle);
+            ButterKnife.bind(this, view);
         }
     }
 

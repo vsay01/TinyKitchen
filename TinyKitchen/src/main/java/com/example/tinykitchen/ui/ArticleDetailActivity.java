@@ -28,6 +28,9 @@ import com.example.tinykitchen.R;
 import com.example.tinykitchen.data.ArticleLoader;
 import com.example.tinykitchen.data.ItemsContract;
 
+import butterknife.BindColor;
+import butterknife.ButterKnife;
+
 /**
  * An activity representing a single Article detail screen, letting you swipe between articles.
  */
@@ -48,6 +51,9 @@ public class ArticleDetailActivity extends ActionBarActivity
     private CustomTabActivityHelper mCustomTabActivityHelper;
     private static final String TAG = "CustChromeTabActivity";
 
+    @BindColor(R.color.primary_dark) int primary_dark;
+    @BindColor(R.color.primary) int primary;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         mCustomTabActivityHelper = new CustomTabActivityHelper();
@@ -58,6 +64,7 @@ public class ArticleDetailActivity extends ActionBarActivity
                             View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
         }
         setContentView(R.layout.activity_article_detail);
+        ButterKnife.bind(this);
 
         getLoaderManager().initLoader(0, null, this);
 
@@ -206,9 +213,9 @@ public class ArticleDetailActivity extends ActionBarActivity
         int color = Color.BLUE;
         try {
             //color = Color.parseColor(mCustomTabColorEditText.getText().toString());
-            color = getResources().getColor(R.color.primary_dark);
+            color = primary_dark;
         } catch (NumberFormatException ex) {
-            Log.i(TAG, "Unable to parse Color: " + getResources().getColor(R.color.primary));
+            Log.i(TAG, "Unable to parse Color: " + primary);
         }
 
         CustomTabsIntent.Builder intentBuilder = new CustomTabsIntent.Builder();
@@ -216,8 +223,7 @@ public class ArticleDetailActivity extends ActionBarActivity
 
         //Generally you do not want to decode bitmaps in the UI thread.
         String shareLabel = getString(R.string.label_action_share);
-        Bitmap icon = BitmapFactory.decodeResource(getResources(),
-                android.R.drawable.ic_menu_share);
+        Bitmap icon = BitmapFactory.decodeResource(getResources(), android.R.drawable.ic_menu_share);
         PendingIntent pendingIntent = createPendingIntent();
         intentBuilder.setActionButton(icon, shareLabel, pendingIntent);
 
