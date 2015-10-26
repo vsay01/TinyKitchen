@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".ui.ArticleListActivity"
+            android:name=".activities.ArticleListActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.Main">
             <intent-filter>
@@ -25,8 +25,8 @@
         </activity>
 
         <activity
-            android:name=".ui.ArticleDetailActivity"
-            android:parentActivityName=".ui.ArticleListActivity"
+            android:name=".activities.ArticleDetailActivity"
+            android:parentActivityName=".activities.ArticleListActivity"
             android:theme="@style/AppTheme.Details">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -35,10 +35,10 @@
             </intent-filter>
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.ArticleListActivity" />
+                android:value=".activities.ArticleListActivity" />
         </activity>
 
-        <service android:name=".data.UpdaterService"
+        <service android:name=".service.UpdaterService"
             android:exported="false" />
 
         <provider android:name=".data.ItemsProvider"

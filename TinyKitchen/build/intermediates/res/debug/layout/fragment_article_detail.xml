@@ -1,10 +1,10 @@
-<com.example.tinykitchen.ui.DrawInsetsFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.example.tinykitchen.activities.DrawInsetsFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/draw_insets_frame_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.tinykitchen.ui.ObservableScrollView
+    <com.example.tinykitchen.widgets.ObservableScrollView
         android:id="@+id/scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -33,7 +33,7 @@
 
             </FrameLayout>
 
-            <com.example.tinykitchen.ui.MaxWidthLinearLayout
+            <com.example.tinykitchen.utils.MaxWidthLinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -97,14 +97,14 @@
                     android:layout_marginLeft="@dimen/detail_inner_horiz_margin"
                     android:layout_marginRight="@dimen/detail_inner_horiz_margin"
                     android:paddingBottom="@dimen/detail_body_bottom_margin"
-                    android:textColor="@color/abc_primary_text_material_light"
+                    android:textColor="@color/primary"
                     android:textColorLink="@color/theme_accent"
                     android:textSize="@dimen/detail_body_text_size"
                     android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier" />
 
-            </com.example.tinykitchen.ui.MaxWidthLinearLayout>
+            </com.example.tinykitchen.utils.MaxWidthLinearLayout>
         </FrameLayout>
-    </com.example.tinykitchen.ui.ObservableScrollView>
+    </com.example.tinykitchen.widgets.ObservableScrollView>
 
     <ImageButton android:id="@+id/share_fab"
         android:stateListAnimator="@anim/fab_state_list_anim"
@@ -118,5 +118,5 @@
         android:elevation="@dimen/fab_elevation"
         android:contentDescription="@string/action_share" />
 
-</com.example.tinykitchen.ui.DrawInsetsFrameLayout>
+</com.example.tinykitchen.activities.DrawInsetsFrameLayout>
 <!-- From: file:/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/src/main/res/layout/fragment_article_detail.xml -->

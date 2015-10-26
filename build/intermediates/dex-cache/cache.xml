@@ -6,91 +6,98 @@
         jumboMode="false"
         revision="23.0.1"
         sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
-        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/debug/classes-bf9a32ad5fd19695e9f061eb81ea62d110878665.jar" />
+        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/release/classes-bf9a32ad5fd19695e9f061eb81ea62d110878665.jar" />
     </item>
     <item
         jar="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/debug/classes-634796b4c031f079d329f1ad63988cb1e1e6dce9.jar" />
+        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/release/classes-634796b4c031f079d329f1ad63988cb1e1e6dce9.jar" />
     </item>
     <item
         jar="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.1/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="39ae02ce40c3ac828abbf780ce0ff5d7a28b7d6a">
-        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/debug/classes-f8bec28498896a0f9e2501b9eab4b6619c3aef9a.jar" />
+        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/release/classes-f8bec28498896a0f9e2501b9eab4b6619c3aef9a.jar" />
     </item>
     <item
         jar="/Users/vortana_say/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/1.1.0/d51280dbb4e8539f6c3f369d516edc26f9d89d31/okhttp-1.1.0.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="d51280dbb4e8539f6c3f369d516edc26f9d89d31">
-        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/debug/okhttp-1.1.0-fb4459a75758495a6fc9df81ad09063c283cb82d.jar" />
+        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/release/okhttp-1.1.0-fb4459a75758495a6fc9df81ad09063c283cb82d.jar" />
     </item>
     <item
         jar="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/exploded-aar/com.android.support/design/23.0.1/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
-        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/debug/classes-2975fb94979f8bb1b93e679485233a9d48a5f361.jar" />
+        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/release/classes-2975fb94979f8bb1b93e679485233a9d48a5f361.jar" />
     </item>
     <item
         jar="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/libs/volley.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="c68094cbd011a3f9dccbfe16e77a2cf43622e277">
-        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/debug/volley-aa6e4ec2fd185e18b2822838e270bf80047d87e5.jar" />
+        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/release/volley-aa6e4ec2fd185e18b2822838e270bf80047d87e5.jar" />
+    </item>
+    <item
+        jar="/Users/vortana_say/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/release/butterknife-7.0.1-a2eebef1108c5d0ec90d59ad8c9183005d0f1ce3.jar" />
     </item>
     <item
         jar="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/libs/internal_impl-23.0.1.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-2ad00017deac665e5c8b3973d7c155d949b85cff.jar" />
+        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/release/internal_impl-23.0.1-2ad00017deac665e5c8b3973d7c155d949b85cff.jar" />
     </item>
     <item
         jar="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/debug/classes-a660c468827ae752fc06c62694519e87a246fb8d.jar" />
+        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/release/classes-a660c468827ae752fc06c62694519e87a246fb8d.jar" />
     </item>
     <item
         jar="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/exploded-aar/com.android.support/customtabs/23.0.0/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="dd3fc00e008cf4410d21b6fe2d1ed006be468272">
-        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/debug/classes-d8ce00eeab9148863b2c51a478a37e45fba4d928.jar" />
+        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/release/classes-d8ce00eeab9148863b2c51a478a37e45fba4d928.jar" />
     </item>
     <item
         jar="/Users/vortana_say/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/debug/support-annotations-23.0.1-e8f9a851ff7b80440246b327fb9cd182a30619fc.jar" />
+        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/release/support-annotations-23.0.1-e8f9a851ff7b80440246b327fb9cd182a30619fc.jar" />
     </item>
     <item
         jar="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/exploded-aar/com.android.support/support-v13/23.0.1/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="8c046c952177602c858ed41c8fc492c939bde9aa">
-        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/debug/classes-a08863b6bbbb06e425c2c3c99489b02ff491d6c8.jar" />
+        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/release/classes-a08863b6bbbb06e425c2c3c99489b02ff491d6c8.jar" />
     </item>
     <item
         jar="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/exploded-aar/com.android.support/support-v13/23.0.1/libs/internal_impl-23.0.1.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="a0c456a59e1edab84702b48a626705aa1d830ccc">
-        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-507d9df46a780e2b07b7e2cfdd43dcd1faded39c.jar" />
+        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/release/internal_impl-23.0.1-507d9df46a780e2b07b7e2cfdd43dcd1faded39c.jar" />
     </item>
     <item
         jar="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/exploded-aar/com.android.support/palette-v7/23.0.1/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="a527cd5d9aa10f1a387cbd1c4c426fff5022a376">
-        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/debug/classes-219fe1a5fbf17ddf4dfeda1ada8cf69a351f56d0.jar" />
+        <dex dex="/Users/vortana_say/AndroidStudioProjects/TinyKitchen/TinyKitchen/build/intermediates/pre-dexed/release/classes-219fe1a5fbf17ddf4dfeda1ada8cf69a351f56d0.jar" />
     </item>
 
 </items>
